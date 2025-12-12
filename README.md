@@ -128,6 +128,7 @@ REST API endpoints
 Advanced NLP models (BERT, Transformers)
 A/B testing for recommendation quality
 Mobile app version
+
 🧰 Troubleshooting
 Issue	Solution
 Module Not Found	Run: pip install --upgrade -r requirements.txt
@@ -137,16 +138,22 @@ Invalid CSV	Ensure all required columns are present
 📄 License
 This project is for educational and personal use.
 Please credit the original authors when modifying or sharing.
+
+
 👥 Contributing
 Contributions are welcome:
 Fix bugs
 Add new features
 Improve documentation
 Optimize performance
+
+
 📞 Support
 Check the Troubleshooting section
 Review console error messages
 Verify CSV format
 Open an Issue on GitHub
+
+
 🧡 Built With
 Streamlit, Scikit-learn, Python
