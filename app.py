@@ -202,7 +202,7 @@ if st.sidebar.button("Find Internships", type="primary"):
             'company_name',
             'location',
             'duration',
-            'stipend',
+        'stipend',
             'similarity_score'
         ]
         display_df = recommendations[display_cols].rename(columns={
