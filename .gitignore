@@ -22,3 +22,4 @@ Thumbs.db
 # Secrets & Local Configs
 .env
 .streamlit/secrets.toml
+

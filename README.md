@@ -2,7 +2,7 @@
 
 # 🎓 InternMatch: AI-Powered Internship Recommendation System
 
-**Intelligent Student-Opportunity Matching for Communication Systems Engineering**
+**Intelligent Student-Opportunity Matching Platform for Computer Science & Engineering**
 
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Streamlit 1.50+](https://img.shields.io/badge/Streamlit-1.50%2B-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)
@@ -22,12 +22,11 @@
 - [Executive Overview](#-executive-overview)
 - [Key Features](#-key-features)
 - [Mathematical Formulation](#-mathematical-formulation)
-- [Communication Systems Analogy (CCE)](#-communication-systems-analogy-cce)
+- [Information Retrieval & System Formulation](#-information-retrieval--system-formulation)
 - [System Architecture](#-system-architecture)
 - [Dataset Characteristics](#-dataset-characteristics)
 - [Project Structure](#-project-structure)
 - [Installation & Quickstart](#-installation--quickstart)
-- [Presentation & Defense Deliverables](#-presentation--defense-deliverables)
 - [AI / LLM Context Guide](#-ai--llm-context-guide)
 - [Academic Metadata](#-academic-metadata)
 
@@ -101,16 +100,16 @@ $$\mathcal{R}^* = \operatorname{arg\,top}_K \left\{ \text{Similarity}(\vec{u}, \
 
 ---
 
-## 📡 Communication Systems Analogy (CCE)
+## 📡 Information Retrieval & System Formulation
 
-Designed for the academic subject **AI and ML for Communication Systems**, this platform formally models recommendation as an **Information Transmission Channel**:
+This platform formally models recommendation as an **Information Transmission Channel**:
 
 ```
 [ Student Profile ] ---> [ NLP & TF-IDF Encoder ] ---> [ Digital Recruitment Channel ] ---> [ Cosine Decoder ] ---> [ Matched Opportunity ]
    (Transmitter)            (Channel Coding)               (Noise: Typos & Synonyms)            (Receiver)               (Information Sink)
 ```
 
-| Communication Concept | Recommender System Equivalent |
+| Information Theory Concept | Recommender System Equivalent |
 |:---|:---|
 | **Transmitter** | Student Profile / Query Input |
 | **Channel Encoder** | NLP Preprocessor & TF-IDF Vectorizer |
@@ -185,21 +184,7 @@ Internship_Recomendation_System/
 │
 ├── internship.csv                                        # Raw Dataset (6,485 rows)
 ├── internship_recommender_data_20251025_072624.pkl       # Cleaned Pandas DataFrame
-├── internship_recommender_components_20251025_072624.pkl # Serialized TF-IDF Model & Feature Matrix
-│
-├── Presentation_Review_Guide.md                          # Defense Script, Viva Q&A & CCE Guide
-├── generate_diagrams.py                                  # Matplotlib Script Generating 300-DPI Figures
-├── generate_all_pptx.py                                  # Python-pptx Script Generating All 3 Slides
-├── Review_1_Presentation.pptx                            # Presentation Slide Deck 1 (Foundation)
-├── Review_2_Presentation.pptx                            # Presentation Slide Deck 2 (Implementation)
-├── Review_3_Presentation.pptx                            # Presentation Slide Deck 3 (Final Defense)
-└── presentation_assets/                                  # High-Res Architecture & Evaluation PNGs
-    ├── arch_diagram_review1.png
-    ├── arch_diagram_review2.png
-    ├── arch_diagram_review3.png
-    ├── comparison_chart_review3.png
-    ├── performance_metrics_review2.png
-    └── results_performance_review3.png
+└── internship_recommender_components_20251025_072624.pkl # Serialized TF-IDF Model & Feature Matrix
 ```
 
 ---
@@ -232,22 +217,6 @@ Open your browser at **`http://localhost:8501`** to interact with the platform.
 
 ---
 
-## 🎓 Presentation & Defense Deliverables
-
-This repository includes a full automated suite for university reviews:
-
-1. **Review 1 (`Review_1_Presentation.pptx`):** Problem definition, literature review, baseline architecture, and mathematical formulation.
-2. **Review 2 (`Review_2_Presentation.pptx`):** Pipeline implementation, offline serialization vs. online inference, and preliminary precision metrics.
-3. **Review 3 (`Review_3_Presentation.pptx`):** Full-stack production design, comparative benchmarking (TF-IDF vs. BERT vs. Collaborative Filtering), and viva defense results.
-
-Run the diagram or presentation generators anytime:
-```bash
-python generate_diagrams.py  # Re-renders high-res PNGs to presentation_assets/
-python generate_all_pptx.py  # Re-builds all 3 PowerPoint presentations
-```
-
----
-
 ## 🤖 AI / LLM Context Guide
 
 > **Note for AI Coding Assistants (ChatGPT, Claude, Gemini, Copilot):**
@@ -262,15 +231,14 @@ python generate_all_pptx.py  # Re-builds all 3 PowerPoint presentations
 ## 👨‍💻 Academic Metadata
 
 * **Project Title:** AI-Powered Internship Recommendation System
-* **Course:** AI and ML for Communication Systems
-* **Student Name:** Festo Erick Mapunda
-* **Roll No:** 24CC016
-* **Department:** Computer and Communication Engineering (CCE)
+* **Author / Developer:** Rupesh Kumar Sah
+* **Department:** Computer Science and Engineering (CSE)
 * **Institution:** Sri Eshwar College of Engineering
+* **Email:** rupeshkumarsah.2024cse@sece.ac.in
 * **Repository:** [github.com/rupeshsah86/Internship_Recomendation_System](https://github.com/rupeshsah86/Internship_Recomendation_System)
 
 ---
 
 <div align="center">
-  <sub>Built with ❤️ for modern student career mobility & communication systems research.</sub>
+  <sub>Built with ❤️ by Rupesh Kumar Sah for modern student career mobility.</sub>
 </div>

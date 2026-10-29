@@ -529,9 +529,9 @@ def get_bot_response(user_input, recommender):
             "4. **Deterministic Filtering:** Prunes results based on your minimum stipend, duration, and location limits."
         )
 
-    if any(w in msg for w in ['communication', 'cce', 'subject', 'channel']):
+    if any(w in msg for w in ['communication', 'systems', 'analogy', 'channel', 'information theory']):
         return (
-            "📡 **Connection to Communication Systems Engineering:**\n\n"
+            "📡 **Information Theory & Systems Architecture Analogy:**\n\n"
             "- **Transmitter:** Student Profile / Query\n"
             "- **Channel Encoder:** NLP Lemmatizer & TF-IDF Vectorizer\n"
             "- **Noisy Channel:** Real-world unstructured job descriptions with typos/synonyms\n"
@@ -641,7 +641,7 @@ with tab_find:
         "📊 Data Science": "Data Science, Python, SQL, Statistics, Pandas, Data Analysis",
         "☁️ Cloud & DevOps": "DevOps, Docker, Kubernetes, Cloud Computing, Linux, AWS",
         "📱 Mobile Apps": "Flutter, Android, React Native, Mobile Development, Kotlin",
-        "📡 IoT & Embedded (CCE)": "IoT, Embedded Systems, Arduino, Raspberry Pi, Communication",
+        "📡 IoT & Embedded Systems": "IoT, Embedded Systems, Arduino, Raspberry Pi, Communication",
         "🎨 UI/UX Design": "UI/UX, Graphic Design, Figma, Adobe XD, User Experience"
     }
 
@@ -988,7 +988,7 @@ with tab_insights:
 # ════════════════════════════════════════════════════════════════════════════
 with tab_chatbot:
     st.markdown("### 🤖 AI Career & Algorithm Assistant")
-    st.caption("Ask questions about the matching model, stipend insights, or CCE system analogies.")
+    st.caption("Ask questions about the matching model, stipend insights, or system architecture analogies.")
 
     if "chat_history" not in st.session_state:
         st.session_state.chat_history = [
@@ -998,7 +998,7 @@ with tab_chatbot:
     # Quick prompt pills
     prompt_pills = [
         "How does the matching algorithm work?",
-        "Connection to Communication Systems?",
+        "Information Retrieval Analogy?",
         "What are the stipend trends?",
         "Tell me about remote internships"
     ]
